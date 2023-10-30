@@ -31,8 +31,9 @@ export const Register = () => {
   return (
     <div className="register-wrapper">
       <div className="register">
-        <h1>Register</h1>
+        <div className="filter-div"></div>
         <form className="register-form" onSubmit={handleSubmit}>
+          <h1>Register</h1>
           <input
             type="text"
             name="username"
@@ -63,14 +64,9 @@ export const Register = () => {
           <button type="submit" className="standart-btn">
             Register
           </button>
+          <Link to={"/login"}>go to login page</Link>
+          {err && <p className="error-message">{err}</p>}
         </form>
-        <Link
-          style={{ color: "white", textDecoration: "none", marginTop: "1rem" }}
-          to={"/login"}
-        >
-          go to login page
-        </Link>
-        {err && <p className="error-message">{err}</p>}
       </div>
     </div>
   );

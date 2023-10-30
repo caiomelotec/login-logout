@@ -34,8 +34,9 @@ export const Login = () => {
   return (
     <div className="register-wrapper">
       <div className="register">
-        <h1>Login</h1>
+        <div className="filter-div"></div>
         <form className="register-form" onSubmit={handleSubmit}>
+          <h1>Login</h1>
           <input
             type="text"
             name="username"
@@ -57,14 +58,18 @@ export const Login = () => {
           <button type="submit" className="standart-btn">
             Login
           </button>
+          <Link
+            style={{
+              color: "white",
+              textDecoration: "none",
+              marginTop: "1rem",
+            }}
+            to={"/register"}
+          >
+            Create an account
+          </Link>
+          {errorMessage && <p className="error-message">{errorMessage}</p>}
         </form>
-        <Link
-          style={{ color: "white", textDecoration: "none", marginTop: "1rem" }}
-          to={"/register"}
-        >
-          Create an account
-        </Link>
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
     </div>
   );
