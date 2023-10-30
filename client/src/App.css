@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,300&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+h1 {
+  color: white;
+}
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.register {
+  width: 350px;
+  height: 300px;
+  border: solid 1px lightgray;
+  padding: 20px;
+  border-radius: 10px;
+}
+.standart-btn {
+  border: none;
+  color: black;
+  background-color: lawngreen;
+  border: black 1px solid;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.standart-btn:hover {
+  transform: scale(1.1);
+  background-color: rgb(83, 163, 3);
+}
+.error-message {
+  background-color: white;
+  color: red;
+  padding: 4px;
+  border-radius: 8px;
+}
+.logout-btn {
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hello-msg {
+  color: white;
+}
